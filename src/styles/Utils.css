@@ -20,7 +20,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .section {
@@ -64,7 +64,7 @@
   }
 
   .section {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 }
 

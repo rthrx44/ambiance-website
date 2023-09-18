@@ -4,20 +4,22 @@ import { RButton } from './Button';
 
 function Navbar () {
   return (
-    <nav className='container w-auto flex justify-between py-6 px-12'>
-      <div className=''>
-        <img className='h-8 cursor-pointer' src={Logo} alt="Ambiance Interior Design Studio" />
-      </div>
-      <div className='flex items-center'>
-        <ul className='font-sans flex items-center gap-10 text-xs font-normal tracking-wide transition-all'>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'>ABOUT US</li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'>WHAT WE DO</li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'>PROJECTS</li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'>CAREERS</li>
-          <RButton displayText='CONTACT US'/>   
-        </ul>
-      </div>
-    </nav>
+    <header id='home'>
+      <nav className='container w-auto sticky top-0 flex justify-between bg-white py-8 px-12 z-10 shadow-md shadow-slate-200'>
+        <div>
+          <a href="#home"><img className='h-8 cursor-pointer' src={Logo} alt="Ambiance Interior Design Studio" /></a>
+        </div>
+        <div className='flex items-center'>
+          <ul className='font-sans flex items-center gap-10 text-xs font-normal tracking-wide transition-all'>
+            <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#about">ABOUT US</a></li>
+            <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#what">WHAT WE DO</a></li>
+            <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#project">PROJECTS</a></li>
+            <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#career">CAREERS</a></li>
+            <RButton displayText='CONTACT US'/>   
+          </ul>
+        </div>
+      </nav>
+    </header>
   )
 }
 
