@@ -21,9 +21,9 @@ function Landing() {
   return (
     <>
       <Navbar/>
-      <section className='container relative'>
+      <section className='container pt-24'>
         <img className='w-auto -z-10' src={Base} alt="Hero Banner" />
-        <div className='absolute top-40 pl-12'>
+        <div className='absolute top-64 pl-12'>
           <h1 id='about' className='font-serif text-2xl tracking-wide font-medium mb-6'>Simplified Complexity</h1>
           <p className='font-sans text-xs mb-6'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
           <RButton displayText='ABOUT US'/>
@@ -41,32 +41,32 @@ function Landing() {
         <div className='flex flec-col'>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Space} alt="Space Planning" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Space Planning</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Space Planning</h4>
           </div>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Layout} alt="Layout" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Layouting</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Layouting</h4>
           </div>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Build} alt="Built-In/Custom Furniture" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Built-In/Custom Furniture</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Built-In/Custom Furniture</h4>
           </div>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Lightning} alt="Lightning" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Lightning</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Lightning</h4>
           </div>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Acoustic} alt="Acoustics" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Acoustics</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Acoustics</h4>
           </div>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Ceilling} alt="Ceilling Designs" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-400 transition-all'>Ceilling Designs</h4>
+            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Ceilling Designs</h4>
           </div>
         </div>
         <div className='flex justify-center gap-6 mt-6 transition-all'>
-          <WestRoundedIcon className='hover:text-orange-400 transition-all'/>
-          <EastRoundedIcon className='hover:text-orange-400 transition-all'/>
+          <WestRoundedIcon className='hover:text-orange-500 transition-all'/>
+          <EastRoundedIcon className='hover:text-orange-500 transition-all'/>
         </div>
       </section>
       <section className='container section grid grid-cols-2 gap-4'>
@@ -84,13 +84,13 @@ function Landing() {
       <section className='container section relative flex justify-around'>
         <img className='w-full opacity-10 -z-10' src={Hexa} alt="Hexagon" />
         <div className='absolute flex top-8 gap-24 items-center'>
-          <WestRoundedIcon className='hover:text-orange-400 transition-all'/>
-          <div className='flex flex-col items-center'>
+          <WestRoundedIcon className='hover:text-orange-500 transition-all'/>
+          <div className='flex flex-col items-center text-center px-4'>
             <img className='w-12 mb-8' src={Right} alt="Right Quote" />
             <p className='font-sans text-sm mb-6'>It is very satisfying when a decision we make turns out to have been the best one.</p>
             <p className='font-sans text-sm'>Jane Doe</p>
           </div>
-          <EastRoundedIcon className='hover:text-orange-400 transition-all'/>
+          <EastRoundedIcon className='hover:text-orange-500 transition-all'/>
         </div>
       </section>
       <section className='container section grid grid-cols-2 gap-4'>
@@ -152,11 +152,11 @@ function Landing() {
           <a href="#home"><img className='h-8 cursor-pointer mt-36' src={Logo} alt="Ambiance Interior Design Studio" /></a>
         </div>
         <ul className='font-sans flex items-center gap-10 text-xs font-normal tracking-wide transition-all'>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#about">ABOUT US</a></li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#what">WHAT WE DO</a></li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#project">PROJECTS</a></li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#career">CAREERS</a></li>
-          <li className='hover:text-orange-400 transition-all cursor-pointer'><a href="#contact">CONTACT US</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#about">ABOUT US</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#what">WHAT WE DO</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#project">PROJECTS</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#career">CAREERS</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#contact">CONTACT US</a></li>
         </ul>
       </section>
       <footer className='mt-16 mb-8 text-center'>
