@@ -1,7 +1,6 @@
 import './styles/index.css';
 import './styles/App.css';
 import './styles/Modern-normalize.css';
-import './styles/Utils.css';
 import Landing from './page/landing/Landing';
 
 function App() {

@@ -21,23 +21,23 @@ function Landing() {
   return (
     <>
       <Navbar/>
-      <section className='container pt-24'>
-        <img className='w-auto -z-10' src={Base} alt="Hero Banner" />
-        <div className='absolute top-64 pl-12'>
+      <section>
+        <img className='h-screen' src={Base} alt="Hero Banner" />
+        {/* <div className='absolute top-64 pl-12'>
           <h1 id='about' className='font-serif text-2xl tracking-wide font-medium mb-6'>Simplified Complexity</h1>
           <p className='font-sans text-xs mb-6'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
           <RButton displayText='ABOUT US'/>
-        </div>
+        </div> */}
       </section>
-      <section className='container relative text-center'>
+      <section className='relative text-center'>
         <img className='w-full opacity-10 -z-10' src={Hexa} alt="Hexagon" />
         <p className='absolute top-0 font-sans text-xs py-20 px-36'>We at Ambiance Interior Design have been passionate about creating spaces reflecting the individuality of our client. Imagination and knowledge are the core values that drive us. We strive to push our imagination for a fresh look injected with design savvy and an eye for detail in the modern and eclectic styles we predominantly design in.</p>
       </section>
-      <section className='text-center mt-20'>
+      {/* <section className='text-center mt-20'>
         <h1 id='what' className='font-serif text-2xl tracking-wide font-medium mb-6'>What We Do</h1>
         <p className='font-sans text-xs'>We strive to push our imagination for a fresh look injected with design savvy and an eye for <br/>detail in the modern and eclectic styles we predominantly design in.</p>
-      </section>
-      <section className='container gap-4 mt-12'>
+      </section> */}
+      {/* <section className='gap-4 mt-12'>
         <div className='flex flec-col'>
           <div className='flex flex-col group transition-all'>
             <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Space} alt="Space Planning" />
@@ -68,8 +68,8 @@ function Landing() {
           <WestRoundedIcon className='hover:text-orange-500 transition-all'/>
           <EastRoundedIcon className='hover:text-orange-500 transition-all'/>
         </div>
-      </section>
-      <section className='container section grid grid-cols-2 gap-4'>
+      </section> */}
+      {/* <section className='grid grid-cols-2 gap-4'>
         <div id='project' >
           <img src={BaseThree} alt="Furniture" />
         </div>
@@ -80,8 +80,8 @@ function Landing() {
             <RButton displayText='VIEW MORE'/>
           </div>
         </div>
-      </section>
-      <section className='container section relative flex justify-around'>
+      </section> */}
+      {/* <section className='relative flex justify-around'>
         <img className='w-full opacity-10 -z-10' src={Hexa} alt="Hexagon" />
         <div className='absolute flex top-8 gap-24 items-center'>
           <WestRoundedIcon className='hover:text-orange-500 transition-all'/>
@@ -92,8 +92,8 @@ function Landing() {
           </div>
           <EastRoundedIcon className='hover:text-orange-500 transition-all'/>
         </div>
-      </section>
-      <section className='container section grid grid-cols-2 gap-4'>
+      </section> */}
+      {/* <section className='grid grid-cols-2 gap-4'>
         <div className='flex flex-col pl-12 justify-center'>
           <h1 className='font-serif text-2xl tracking-wide font-medium mb-6'>Be Part Of Our Team</h1>
           <p className='font-sans text-xs mb-6'>Explore opportunities to take your career to the next level. Join our team of talented individuals and let us support your curiosity and creative talent.</p>
@@ -104,8 +104,8 @@ function Landing() {
         <div className='flex justify-center'>
           <img className='max-w-sm' src={BaseOne} alt="People Planning" />
         </div>
-      </section>
-      <section className='container section flex justify-center'>
+      </section> */}
+      {/* <section className='flex justify-center'>
         <img className='w-full h-80 mt-32' src={BaseTwo} alt="Wood Furniture" />
         <div id='career' className='absolute bg-white items-center py-16 px-32 shadow-md shadow-slate-200'>
           <h1 className='font-serif text-2xl text-center tracking-wide font-medium mb-6'>Be Part Of Our Team</h1>
@@ -146,8 +146,8 @@ function Landing() {
             <RButton displayText='SUBMIT'/>
           </div>
         </div>
-      </section>
-      <section className='container section flex flex-col items-center gap-16 '>
+      </section> */}
+      {/* <section className='flex flex-col items-center gap-16 '>
         <div>
           <a href="#home"><img className='h-8 cursor-pointer mt-36' src={Logo} alt="Ambiance Interior Design Studio" /></a>
         </div>
@@ -158,10 +158,10 @@ function Landing() {
           <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#career">CAREERS</a></li>
           <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#contact">CONTACT US</a></li>
         </ul>
-      </section>
-      <footer className='mt-16 mb-8 text-center'>
+      </section> */}
+      {/* <footer className='mt-16 mb-8 text-center'>
         <p className='font-sans text-xs'>©2022 Ambiance Interior Design Studio</p>
-      </footer>
+      </footer> */}
     </>
   )
 }
