@@ -3,6 +3,7 @@ import Navbar from '../../component/Navbar'
 import Logo from '../../component/assets/Logo.png'
 import Base from '../../component/assets/Base.png'
 import Hexa from '../../component/assets/Hexagon.png'
+import Hexa2 from '../../component/assets/Hexa-phone.png'
 import Space from '../../component/assets/SpacePlanning.png'
 import Layout from '../../component/assets/Layouting.png'
 import Build from '../../component/assets/Built.png'
@@ -13,62 +14,133 @@ import BaseThree from '../../component/assets/Base 3.png'
 import BaseTwo from '../../component/assets/Base 2.png'
 import BaseOne from '../../component/assets/Base 1.png'
 import Right from '../../component/assets/RightQuote.png'
+import Phone from '../../component/assets/Phone.png'
+import Tablet from '../../component/assets/Tablet.png'
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import { RButton } from '../../component/Button'
+
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 function Landing() {
   return (
     <>
       <Navbar/>
       <section>
-        <img className='h-screen' src={Base} alt="Hero Banner" />
-        {/* <div className='absolute top-64 pl-12'>
-          <h1 id='about' className='font-serif text-2xl tracking-wide font-medium mb-6'>Simplified Complexity</h1>
-          <p className='font-sans text-xs mb-6'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
-          <RButton displayText='ABOUT US'/>
-        </div> */}
+        <div className='xs:hidden container mx-auto'>
+          <img className='w-full' src={Phone} alt="Hero Banner"/>
+          <div className='container absolute justify-center top-56 px-16 xxs:top-[17rem] xxs:px-28'>
+            <h1 id='about' className='font-serif text-center text-3xl tracking-wide font-medium mb-6'>Simplified Complexity</h1>
+            <p className='font-sans text-center text-xs mb-6'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
+            <div className='flex justify-center'>
+              <RButton displayText='ABOUT US'/>
+            </div>
+          </div>
+        </div>
+        <div className='hidden xs:flex md:hidden container mx-auto'>
+        <img className='w-full' src={Tablet} alt="Hero Banner"/>
+          <div className='container absolute top-40 pl-4 sm:pl-6 sm:top-[14.5rem]'>
+            <h1 id='about' className='font-serif text-2xl tracking-wide font-medium mb-6 sm:text-3xl'>Simplified Complexity</h1>
+            <p className='font-sans text-start text-[0.6rem] mb-6 sm:text-xs'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
+            <div className='flex'>
+              <RButton displayText='ABOUT US'/>
+            </div>
+          </div>
+        </div>
+        <div className='hidden md:flex container mx-auto'>
+        <img className='w-full' src={Base} alt="Hero Banner"/>
+          <div className='container absolute pl-12 top-[13.5rem] lg:top-[17rem] lg:pl-20 xl:top-[22rem] xl:pl-36 2xl:top-[25rem]'>
+            <h1 id='about' className='font-serif text-4xl tracking-wide font-medium mb-6 lg:text-5xl'>Simplified Complexity</h1>
+            <p className='font-sans text-start text-xs mb-6 lg:text-sm xl:text-base'>A raw idea is complex but by having collaboration with us, the experts. <br/>it can be refined or simplified.</p>
+            <div className='flex'>
+              <RButton displayText='ABOUT US'/>
+            </div>
+          </div>
+        </div>
       </section>
-      <section className='relative text-center'>
-        <img className='w-full opacity-10 -z-10' src={Hexa} alt="Hexagon" />
-        <p className='absolute top-0 font-sans text-xs py-20 px-36'>We at Ambiance Interior Design have been passionate about creating spaces reflecting the individuality of our client. Imagination and knowledge are the core values that drive us. We strive to push our imagination for a fresh look injected with design savvy and an eye for detail in the modern and eclectic styles we predominantly design in.</p>
+      <section>
+        <div className='container mx-auto relative xs:hidden'>
+          <img className='bg-cover w-full opacity-20' src={Hexa2} alt="Hexagon" />
+          <div className='absolute top-0 h-full flex items-center text-center'>
+            <p className='font-serif text-base font-medium leading-9 px-[3.2rem] xxs:leading-10 xxs:px-24'>We at Ambiance Interior Design have been passionate about creating spaces reflecting the individuality of our client. Imagination and knowledge are the core values that drive us. We strive to push our imagination for a fresh look injected with design savvy and an eye for detail in the modern and eclectic styles we predominantly design in.</p>
+          </div>
+        </div>
+        <div className='container mx-auto relative hidden xs:flex'>
+          <img className='bg-cover w-full opacity-20' src={Hexa} alt="Hexagon" />
+          <div className='absolute top-0 h-full flex items-center text-center'>
+            <p className='font-serif text-[0.6rem] leading-4 tracking-wider px-4 sm:text-xs sm:leading-5 sm:px-5 md:px-12 lg:px-20 lg:text-base xl:px-36 xl:text-lg'>We at Ambiance Interior Design have been passionate about creating spaces reflecting the individuality of our client. Imagination and knowledge are the core values that drive us. We strive to push our imagination for a fresh look injected with design savvy and an eye for detail in the modern and eclectic styles we predominantly design in.</p>
+          </div>
+        </div>
       </section>
-      {/* <section className='text-center mt-20'>
-        <h1 id='what' className='font-serif text-2xl tracking-wide font-medium mb-6'>What We Do</h1>
-        <p className='font-sans text-xs'>We strive to push our imagination for a fresh look injected with design savvy and an eye for <br/>detail in the modern and eclectic styles we predominantly design in.</p>
-      </section> */}
-      {/* <section className='gap-4 mt-12'>
-        <div className='flex flec-col'>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Space} alt="Space Planning" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Space Planning</h4>
-          </div>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Layout} alt="Layout" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Layouting</h4>
-          </div>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Build} alt="Built-In/Custom Furniture" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Built-In/Custom Furniture</h4>
-          </div>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Lightning} alt="Lightning" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Lightning</h4>
-          </div>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Acoustic} alt="Acoustics" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Acoustics</h4>
-          </div>
-          <div className='flex flex-col group transition-all'>
-            <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Ceilling} alt="Ceilling Designs" />
-            <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Ceilling Designs</h4>
-          </div>
+      <section className='mt-24 text-center container mx-auto'>
+        <h1 id='what' className='font-serif text-2xl tracking-wide font-medium mb-6 lg:text-3xl 2xl:text-4xl'>What We Do</h1>
+        <p className='font-sans text-xs px-8 xs:px-4 lg:text-sm xl:text-base'>We strive to push our imagination for a fresh look injected with design savvy and an eye for <br/>detail in the modern and eclectic styles we predominantly design in.</p>
+      </section>
+      <section className='gap-4 mt-12 container mx-auto'>
+        <div className='flex flex-row justify-center'>
+          <Swiper
+            slidesPerView={1}
+          >
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Space} alt="Space Planning" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Space Planning</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Layout} alt="Layout" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Layouting</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Build} alt="Built-In/Custom Furniture" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Built-In/Custom Furniture</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Lightning} alt="Lightning" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Lightning</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Acoustic} alt="Acoustics" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Acoustics</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='flex flex-col items-center group transition-all'>
+                <div>
+                  <img className='h-72 rounded-lg group-hover:-translate-y-1 transition-all' src={Ceilling} alt="Ceilling Designs" />
+                  <h4 className='font-sans text-xs pl-2 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Ceilling Designs</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className='flex justify-center gap-6 mt-6 transition-all'>
           <WestRoundedIcon className='hover:text-orange-500 transition-all'/>
           <EastRoundedIcon className='hover:text-orange-500 transition-all'/>
         </div>
-      </section> */}
+      </section>
       {/* <section className='grid grid-cols-2 gap-4'>
         <div id='project' >
           <img src={BaseThree} alt="Furniture" />
