@@ -11,8 +11,8 @@ function Navbar () {
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content w-auto">
         {/* Page content here */}
-        <header id='home' className='w-full container m-auto'>
-          <nav className='flex justify-between bg-white shadow-md shadow-slate-200 p-4 sm:py-8 sm:px-6 md:py-10 md:px-12 lg:px-20 xl:px-36'>
+        <header id='home' className='w-full container mx-auto'>
+          <nav className='container flex fixed z-10 justify-between bg-white shadow-md shadow-slate-200 p-4 sm:py-8 sm:px-6 md:py-10 md:px-12 lg:px-20 xl:px-36'>
             <div className='flex items-center'>
               <a href="#home"><img className='h-8 cursor-pointer lg:h-10 xl:h-12' src={Logo} alt="Ambiance Interior Design Studio" /></a>
             </div>
