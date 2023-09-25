@@ -17,7 +17,7 @@ function Navbar () {
               <a href="#home"><img className='h-8 cursor-pointer lg:h-10 xl:h-12' src={Logo} alt="Ambiance Interior Design Studio" /></a>
             </div>
             <div className='flex items-center'>
-              <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary bg-transparent border-none text-zinc-950 px-2 hover:bg-transparent hover:text-orange-400 transition-all md:hidden"><MenuRoundedIcon/></label>
+              <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary bg-transparent border-none text-zinc-950 px-2 hover:bg-transparent hover:text-orange-500 transition-all md:hidden"><MenuRoundedIcon/></label>
               <ul className='font-sans items-center gap-5 text-xs font-normal tracking-wide transition-all container hidden md:flex lg:text-sm lg:gap-8 xl:text-base xl:gap-10'>
                 <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#about">ABOUT US</a></li>
                 <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#what">WHAT WE DO</a></li>
