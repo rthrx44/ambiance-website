@@ -78,8 +78,8 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section id='what' className='mt-24 text-center container mx-auto'>
-        <h1 className='font-serif text-2xl tracking-wide font-medium mb-6 lg:text-3xl 2xl:text-4xl'>What We Do</h1>
+      <section className='mt-24 text-center container mx-auto'>
+        <h1 id='what' className='font-serif text-2xl tracking-wide font-medium mb-6 lg:text-3xl 2xl:text-4xl'>What We Do</h1>
         <p className='font-sans text-xs px-8 xs:px-4 lg:text-sm xl:text-base'>We strive to push our imagination for a fresh look injected with design savvy and an eye for <br/>detail in the modern and eclectic styles we predominantly design in.</p>
       </section>
       <section className='mt-12 gap-4 container mx-auto'>
@@ -92,6 +92,8 @@ function Landing() {
               prevEl: '.button-prev-slide',
             }}
             breakpoints={{
+              520: {slidesPerView: 2,
+                    spaceBetween: -130},
               640: {slidesPerView: 2,
                     spaceBetween: -130},
               768: {slidesPerView: 2,
@@ -107,7 +109,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Space} alt="Space Planning" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Space} alt="Space Planning" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Space Planning</h4>
                 </div>
               </div>
@@ -115,7 +117,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Layout} alt="Layout" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Layout} alt="Layout" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Layouting</h4>
                 </div>
               </div>
@@ -123,7 +125,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Build} alt="Built-In/Custom Furniture" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Build} alt="Built-In/Custom Furniture" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Built-In/Custom Furniture</h4>
                 </div>
               </div>
@@ -131,7 +133,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Lightning} alt="Lightning" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Lightning} alt="Lightning" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Lightning</h4>
                 </div>
               </div>
@@ -139,7 +141,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Acoustic} alt="Acoustics" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Acoustic} alt="Acoustics" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Acoustics</h4>
                 </div>
               </div>
@@ -147,7 +149,7 @@ function Landing() {
             <SwiperSlide>
               <div className='flex flex-col items-center group transition-all'>
                 <div>
-                  <img className='h-72 group-hover:-translate-y-1 transition-all' src={Ceilling} alt="Ceilling Designs" />
+                  <img className='h-72 group-hover:-translate-y-1 transition-all xs:h-52 sm:h-64 md:h-72 xl:h-96' src={Ceilling} alt="Ceilling Designs" />
                   <h4 className='font-sans text-sm font-medium pl-2 pt-4 group-hover:-translate-y-1 group-hover:text-orange-500 transition-all'>Ceilling Designs</h4>
                 </div>
               </div>
@@ -265,7 +267,7 @@ function Landing() {
           <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#what">WHAT WE DO</a></li>
           <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#project">PROJECTS</a></li>
           <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#career">CAREERS</a></li>
-          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#contact">CONTACT US</a></li>
+          <li className='hover:text-orange-500 transition-all cursor-pointer'><a href="#career">CONTACT US</a></li>
         </ul>
       </section>
       <footer className='mt-16 pb-8 text-center'>
