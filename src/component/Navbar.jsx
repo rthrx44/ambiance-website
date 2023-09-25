@@ -31,10 +31,10 @@ function Navbar () {
       </div> 
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-full h-full bg-white text-xs gap-4 justify-center items-center">
+        <ul className="menu h-full w-1/2 bg-white text-xs gap-4 justify-center items-center">
           {/* Sidebar content here */}
           <div className='flex'>
-            <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary absolute top-4 right-2 bg-transparent border-none text-zinc-950 hover:bg-transparent hover:text-orange-400 transition-all"><CloseRoundedIcon/></label>
+            <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary absolute top-4 right-2 bg-transparent border-none text-zinc-950 hover:bg-transparent hover:text-orange-400 transition-all sm:top-8 sm:right-4"><CloseRoundedIcon/></label>
           </div>
           <li><a href="#about" className='hover:text-orange-500 hover:bg-transparent transition-all border-transparent cursor-pointer'>ABOUT US</a></li>
           <li><a href="#what" className='hover:text-orange-500 hover:bg-transparent transition-all border-transparent cursor-pointer'>WHAT WE DO</a></li>
